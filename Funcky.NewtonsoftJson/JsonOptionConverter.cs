@@ -25,7 +25,14 @@ namespace Funcky.NewtonsoftJson
                 throw new ArgumentNullException(nameof(value));
             }
 
-            var writeMethod = GenericWriteMethod.MakeGenericMethod(value.GetType().GetGenericArguments());
+            var type = value.GetType();
+
+            if (!CanConvert(type))
+            {
+                throw new JsonSerializationException($"Expected an Option<>, but got a '{type}' instead.");
+            }
+
+            var writeMethod = GenericWriteMethod.MakeGenericMethod(type.GetGenericArguments());
             writeMethod.Invoke(null, new[] { writer, value, serializer });
         }
 
