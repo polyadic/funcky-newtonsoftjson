@@ -5,10 +5,10 @@
         <Nullable>enable</Nullable>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Product>Funcky a functional C# library</Product>
-        <Description>Funcky is a basic functional C# library</Description>
-        <PackageTags>Functional Monad</PackageTags>
-        <Version>2.2.0</Version>
+        <Product>Newtonsoft.Json Converters for Funcky</Product>
+        <Description>Provides Newtonsoft.Json Converters for Types from Funcky</Description>
+        <PackageTags>Functional Monad NewtonsoftJson Json</PackageTags>
+        <Version>0.1.0</Version>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
