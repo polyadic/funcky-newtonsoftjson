@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk; Microsoft.Build.CentralPackageVersions">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>8.0</LangVersion>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsAsErrors />
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Product>Funcky a functional C# library</Product>
+        <Description>Funcky is a basic functional C# library</Description>
+        <PackageTags>Functional Monad</PackageTags>
+        <Version>2.2.0</Version>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Funcky" />
+        <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
+</Project>
