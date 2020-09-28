@@ -4,8 +4,6 @@
         <LangVersion>8.0</LangVersion>
         <Nullable>enable</Nullable>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-        <WarningsAsErrors />
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Product>Funcky a functional C# library</Product>
         <Description>Funcky is a basic functional C# library</Description>
