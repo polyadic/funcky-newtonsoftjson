@@ -16,7 +16,7 @@ var json = JsonConvert.SerializeObject(Option.Some("hello world"), settings);
 
 ## Using the Converters
 
-The converters implementations are not exposed directly.
+The converter implementations are not exposed directly.
 You can use the extension methods provided for `JsonSerializerSettings` to add the converters instead.
 
 | Extension Method      | Description                                                             |
