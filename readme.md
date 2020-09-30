@@ -13,3 +13,13 @@ using Newtonsoft.Json;
 var settings = new JsonSerializerSettings().AddOptionConverter();
 var json = JsonConvert.SerializeObject(Option.Some("hello world"), settings);
 ```
+
+## Using the Converters
+
+The converters implementations are not exposed directly.
+You can use the extension methods provided for `JsonSerializerSettings` to add the converters instead.
+
+| Extension Method      | Description                                                             |
+| --------------------- | ----------------------------------------------------------------------- |
+| `AddFunckyConverters` | Adds converters for all supported Funcky types (currently only Option). |
+| `AddOptionConverter`  | Adds the converter for `Option<T>`.                                     |
